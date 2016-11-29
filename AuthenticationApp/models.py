@@ -119,5 +119,87 @@ class MyUser(AbstractBaseUser):
      
 # Going to use signals to send emails
 # post_save.connect(new_user_reciever, sender=MyUser)
-             
 
+
+class Student(models.Model):
+    user = models.OneToOneField(
+        MyUser,
+        on_delete=models.CASCADE,
+        primary_key=True)
+    courses = models.ForeignKey('UniversitiesApp.Course', default=None)
+    university = models.OneToOneField('UniversitiesApp.University', default=None)
+
+    def get_full_name(self):
+        return "%s %s" % (self.user.first_name, self.user.last_name)
+
+    def get_short_name(self):
+        return self.user.first_name
+
+    def __str__(self):  # Python 3
+        return "The professor's firstname is: %s, lastname is: %s, email is: %s" %(self.first_name,self.last_name,self.email)
+
+
+    def __unicode__(self):  # Python 2
+        return self.user.email
+
+    def has_perm(self, perm, obj=None):
+        return True
+
+    def has_module_perms(self, app_label):
+        return True
+
+    @property
+    def is_staff(self):
+        return False
+
+
+class Professor(models.Model):
+    user = models.OneToOneField(
+        MyUser,
+        on_delete=models.CASCADE,
+        primary_key=True)
+    courses = models.ForeignKey('UniversitiesApp.Course', default=None)
+    university = models.OneToOneField('UniversitiesApp.University', default=None)
+
+    def get_full_name(self):
+        return "%s %s" % (self.user.first_name, self.user.last_name)
+
+    def get_short_name(self):
+        return self.user.first_name
+
+    def __str__(self):  # Python 3
+        return "The professor's firstname is: %s, lastname is: %s, email is: %s" %(self.first_name,self.last_name,self.email)
+
+    @property
+    def is_staff(self):
+        return True
+
+
+class Engineer(models.Model):
+    user = models.OneToOneField(
+        MyUser,
+        on_delete=models.CASCADE,
+        primary_key=True)
+
+    def get_full_name(self):
+        return "%s %s" % (self.user.first_name, self.user.last_name)
+
+    def get_short_name(self):
+        return self.user.first_name
+
+    def __str__(self):  # Python 3
+        return "The Engineer's firstname is: %s, lastname is: %s, email is: %s" % (
+        self.first_name, self.last_name, self.email)
+
+    def __unicode__(self):  # Python 2
+        return self.user.email
+
+    def has_perm(self, perm, obj=None):
+        return True
+
+    def has_module_perms(self, app_label):
+        return True
+
+    @property
+    def is_staff(self):
+        return True

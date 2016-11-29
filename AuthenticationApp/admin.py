@@ -9,7 +9,7 @@ from django.contrib.auth.admin import UserAdmin as BaseUserAdmin
 
 from .models import MyUser
 from .forms import AdminUserCreationForm, UserChangeForm
-
+from .models import MyUser, Engineer, Student, Professor
 class UserAdmin(BaseUserAdmin):
     # The forms to add and change user instances
     form = UserChangeForm
@@ -43,4 +43,7 @@ class UserAdmin(BaseUserAdmin):
 
 # Now register the new UserAdmin...
 admin.site.register(MyUser, UserAdmin)
+admin.site.register(Student)
+admin.site.register(Professor)
+admin.site.register(Engineer)
 admin.site.unregister(Group)
