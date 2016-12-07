@@ -2,7 +2,8 @@
 
 ## Synopsis
 
-A marketplace for students/groups to find creative and challenging projects to work on. Projects will be provided by industry engineers.  
+We're aware many people want to work on a project but have no idea where to start, so marketplace is for students/groups to find creative and challenging projects to work on. Projects will be provided by industry engineers.
+
 
 ## Features
 
