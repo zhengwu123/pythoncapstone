@@ -2,44 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="209538d0-daf8-46c4-b48e-5ce135983ab5" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CSCapstoneApp/templates/searchresults.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ProjectsApp/forms.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db.sqlite3" afterPath="$PROJECT_DIR$/db.sqlite3" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AuthenticationApp/admin.py" afterPath="$PROJECT_DIR$/AuthenticationApp/admin.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AuthenticationApp/forms.py" afterPath="$PROJECT_DIR$/AuthenticationApp/forms.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AuthenticationApp/models.py" afterPath="$PROJECT_DIR$/AuthenticationApp/models.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AuthenticationApp/urls.py" afterPath="$PROJECT_DIR$/AuthenticationApp/urls.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AuthenticationApp/views.py" afterPath="$PROJECT_DIR$/AuthenticationApp/views.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CSCapstoneApp/templates/index.html" afterPath="$PROJECT_DIR$/CSCapstoneApp/templates/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CSCapstoneApp/urls.py" afterPath="$PROJECT_DIR$/CSCapstoneApp/urls.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CSCapstoneApp/views.py" afterPath="$PROJECT_DIR$/CSCapstoneApp/views.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CommentsApp/models.py" afterPath="$PROJECT_DIR$/CommentsApp/models.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CompaniesApp/templates/company.html" afterPath="$PROJECT_DIR$/CompaniesApp/templates/company.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CompaniesApp/urls.py" afterPath="$PROJECT_DIR$/CompaniesApp/urls.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CompaniesApp/views.py" afterPath="$PROJECT_DIR$/CompaniesApp/views.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/GroupsApp/forms.py" afterPath="$PROJECT_DIR$/GroupsApp/forms.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/GroupsApp/models.py" afterPath="$PROJECT_DIR$/GroupsApp/models.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/GroupsApp/templates/group.html" afterPath="$PROJECT_DIR$/GroupsApp/templates/group.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/GroupsApp/templates/groupform.html" afterPath="$PROJECT_DIR$/GroupsApp/templates/groupform.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/GroupsApp/templates/groupformsuccess.html" afterPath="$PROJECT_DIR$/GroupsApp/templates/groupformsuccess.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/GroupsApp/templates/groups.html" afterPath="$PROJECT_DIR$/GroupsApp/templates/groups.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/GroupsApp/urls.py" afterPath="$PROJECT_DIR$/GroupsApp/urls.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/GroupsApp/views.py" afterPath="$PROJECT_DIR$/GroupsApp/views.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ProjectsApp/admin.py" afterPath="$PROJECT_DIR$/ProjectsApp/admin.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ProjectsApp/models.py" afterPath="$PROJECT_DIR$/ProjectsApp/models.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ProjectsApp/urls.py" afterPath="$PROJECT_DIR$/ProjectsApp/urls.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ProjectsApp/views.py" afterPath="$PROJECT_DIR$/ProjectsApp/views.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/UniversitiesApp/forms.py" afterPath="$PROJECT_DIR$/UniversitiesApp/forms.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/UniversitiesApp/models.py" afterPath="$PROJECT_DIR$/UniversitiesApp/models.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/UniversitiesApp/templates/course.html" afterPath="$PROJECT_DIR$/UniversitiesApp/templates/course.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/UniversitiesApp/templates/courseform.html" afterPath="$PROJECT_DIR$/UniversitiesApp/templates/courseform.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/UniversitiesApp/templates/university.html" afterPath="$PROJECT_DIR$/UniversitiesApp/templates/university.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/UniversitiesApp/templates/universityform.html" afterPath="$PROJECT_DIR$/UniversitiesApp/templates/universityform.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/UniversitiesApp/templates/universityformsuccess.html" afterPath="$PROJECT_DIR$/UniversitiesApp/templates/universityformsuccess.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/UniversitiesApp/urls.py" afterPath="$PROJECT_DIR$/UniversitiesApp/urls.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/UniversitiesApp/views.py" afterPath="$PROJECT_DIR$/UniversitiesApp/views.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/css/bvalidator.css" afterPath="$PROJECT_DIR$/static/css/bvalidator.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/body.html" afterPath="$PROJECT_DIR$/templates/body.html" />
     </list>
     <ignored path="cs390 python.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -59,16 +23,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="group.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/GroupsApp/templates/group.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="60" column="37" selection-start-line="60" selection-start-column="37" selection-end-line="60" selection-end-column="37" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="groupform.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/GroupsApp/templates/groupform.html">
           <provider selected="true" editor-type-id="text-editor">
@@ -99,12 +53,34 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="settings.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="settings.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/CSCapstone/settings.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="296">
               <caret line="45" column="18" selection-start-line="45" selection-start-column="18" selection-end-line="45" selection-end-column="18" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="base.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/base.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-567">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="body.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/templates/body.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="225">
+              <caret line="57" column="12" selection-start-line="57" selection-start-column="12" selection-end-line="57" selection-end-column="12" />
+              <folding>
+                <element signature="n#style#0;n#nav#0;n#!!top" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -144,16 +120,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="90">
               <caret line="6" column="23" selection-start-line="6" selection-start-column="23" selection-end-line="6" selection-end-column="23" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="models.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/CSCapstoneApp/models.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -222,12 +188,13 @@
         <option value="$PROJECT_DIR$/GroupsApp/templates/group.html" />
         <option value="$PROJECT_DIR$/AuthenticationApp/admin.py" />
         <option value="$PROJECT_DIR$/CSCapstone/settings.py" />
+        <option value="$PROJECT_DIR$/templates/body.html" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="267" />
-    <option name="y" value="55" />
+    <option name="x" value="68" />
+    <option name="y" value="141" />
     <option name="width" value="1280" />
     <option name="height" value="686" />
   </component>
@@ -264,6 +231,30 @@
             <PATH_ELEMENT>
               <option name="myItemId" value="cs390 python" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cs390 python" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cs390 python" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cs390 python" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cs390 python" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="templates" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
@@ -451,10 +442,10 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="267" y="55" width="1280" height="686" extended-state="1" />
-    <editor active="false" />
+    <frame x="68" y="141" width="1280" height="686" extended-state="1" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2494043" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2494043" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.31730768" sideWeight="0.5063492" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -491,14 +482,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/AuthenticationApp/templates/auth_form.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="10" selection-start-line="12" selection-start-column="10" selection-end-line="12" selection-end-column="10" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/GroupsApp/apps.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
@@ -783,14 +766,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/base.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-105">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/static/css/site.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -912,6 +887,24 @@
         <state relative-caret-position="296">
           <caret line="45" column="18" selection-start-line="45" selection-start-column="18" selection-end-line="45" selection-end-column="18" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/base.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-567">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/body.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="57" column="12" selection-start-line="57" selection-start-column="12" selection-end-line="57" selection-end-column="12" />
+          <folding>
+            <element signature="n#style#0;n#nav#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
