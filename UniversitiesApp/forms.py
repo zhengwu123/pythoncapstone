@@ -32,8 +32,8 @@ class UpdateUniversityForm(forms.ModelForm):
          self.fields['description'].required = False
 
 class CourseForm(forms.Form):
-    tag = forms.CharField(label='Tag (ex. CS490)', widget=forms.TextInput, max_length=10,required=True)
-    name = forms.CharField(label='Name (ex. Senior Design)', widget=forms.TextInput, max_length=50,required=True)
+    tag = forms.CharField(label='Course name: eg CS390)', widget=forms.TextInput, max_length=10,required=True)
+    name = forms.CharField(label='Label (eg CS390 python django)', widget=forms.TextInput, max_length=50,required=True)
     description = forms.CharField(label='Description',widget=forms.Textarea, max_length=300,required=False)
 
 class UpdateCourseForm(forms.ModelForm):

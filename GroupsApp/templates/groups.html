@@ -1,18 +1,20 @@
+{% extends "body.html" %}
+
 {% block content %}
 
 	<!-- Content -->
 	<div class="container" role="main">
 		<div class="table-responsive">
-			<table class="table table-striped sortable">
+			<table class="table">
 				<thead>
-					<tr>
-						<th>Group</th>
+					<tr class="success">
+						<th>Group name</th>
 						<th>Description</th>
 					</tr>
 				</thead>
 				<tbody>
 					{% for item in groups %}
-					<tr>
+					<tr class="success">
 						<td><a href="/group?name={{ item.name }}">{{ item.name }}</a></td>
 						<td>{{ item.description }}</td>
 					</tr>
