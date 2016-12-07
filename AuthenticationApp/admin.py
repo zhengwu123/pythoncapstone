@@ -7,9 +7,9 @@ from django.contrib import admin
 from django.contrib.auth.models import Group
 from django.contrib.auth.admin import UserAdmin as BaseUserAdmin
 
-from .models import MyUser
-from .forms import AdminUserCreationForm, UserChangeForm
 from .models import MyUser, Engineer, Student, Professor
+from .forms import AdminUserCreationForm, UserChangeForm
+
 class UserAdmin(BaseUserAdmin):
     # The forms to add and change user instances
     form = UserChangeForm
@@ -18,12 +18,11 @@ class UserAdmin(BaseUserAdmin):
     # The fields to be used in displaying the User model.
     # These override the definitions on the base UserAdmin
     # that reference specific fields on auth.User.
-    list_display = ('email', 'first_name', 'last_name', 'is_admin', 
-    	'is_student', 'is_professor', 'is_engineer')    	
-    list_filter = ('is_admin', 'is_active', 'is_student', 'is_professor', 'is_engineer')
+    list_display = ('email', 'first_name', 'last_name', 'is_admin', 'is_student', 'is_professor', 'is_engineer')
+    list_filter = ('is_admin', 'is_active')
     fieldsets = (
         (None, {'fields': ('email', 'password')}),
-        ('Personal info', {'fields': ('first_name', 'last_name',)}),
+        ('Personal info', {'fields': ('first_name', 'last_name','programmingLanguage','speciality','yearsOfExperience')}),
         #('Permissions', {'fields': ('is_admin', 'is_active')}),
         ('Permissions', {'fields': ('is_admin', 'is_active', 'is_student', 'is_professor', 'is_engineer')}),
     )
@@ -44,6 +43,6 @@ class UserAdmin(BaseUserAdmin):
 # Now register the new UserAdmin...
 admin.site.register(MyUser, UserAdmin)
 admin.site.register(Student)
-admin.site.register(Professor)
 admin.site.register(Engineer)
+admin.site.register(Professor)
 admin.site.unregister(Group)
