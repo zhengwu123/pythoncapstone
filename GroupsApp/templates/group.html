@@ -21,7 +21,7 @@
 
     <a href="/group/delete?name={{ group.name }}" class="btn btn-danger btn-sm"><span class="glyphicon glyphicon-remove"></span>Delete</a>
     {% elif is_student == True %}
-    <a href="/group/join?name={{ group.name }}" class="btn btn-default btn-sm"><span class="glyphicon glyphicon-remove"></span>JoinGroup</a>
+    <a href="/group/join?name={{ group.name }}" class="btn btn-default btn-sm"><span class="glyphicon glyphicon-plus-sign"></span>JoinGroup</a>
     {% endif %}
   </div>
 </div>
@@ -45,7 +45,7 @@
   </div>
 </div>
 </div>
-
+<p>   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;     <strong>Recommended projects</strong></p>
 <div class="container">
   <div class="table-responsive">
     <table class="table table-striped sortable">
@@ -76,33 +76,7 @@
 
 
 
-<div class="container">
-  <h2>Recommend Projects for this group</h2>
-  <div class="table-responsive">
-    <table class="table table-striped sortable">
-      <thead>
-        <tr>
-          <th>Projects</th>
-          <th>Description</th>
-          <th>Programming Language</th>
-          <th>Speciality</th>
-        </tr>
-      </thead>
-      <tbody>
-        {% for project in projects_recommended %}
-        <tr>
-          {% if project not in projects %}
-          <td>{{ project.name }}</td>
-          <td>{{ project.description |safe }}</td>
-          <td>{{ project.programmingLanguage }}</td>
-          <td>{{ project.speciaty }}</td>
-          {% endif %}
-        </tr>
-        {% endfor %}
-      </tbody>
-    </table>
-  </div>
-</div>
+
 </div>
 
 <div class="container" role="main">
@@ -124,7 +98,7 @@
           <td>{{ item.createdBy.get_full_name }}</td>
           <td>{{ item.comment }}</td>
           {% if item.createdBy == currentUser or isAdmin %}
-          <td><a href="/group/deleteComment?id={{ item.id }}&group={{ group.name }}" class="btn btn-danger">Delete</a></td>
+          <td><a href="/group/deleteComment?id={{ item.id }}&group={{ group.name }}" class="btn btn-danger btn-sm"><span class="glyphicon glyphicon-remove"></span></a></td>
           {% endif %}
         </tr>
         {% endfor %}

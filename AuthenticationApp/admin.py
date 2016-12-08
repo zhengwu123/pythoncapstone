@@ -42,7 +42,7 @@ class UserAdmin(BaseUserAdmin):
 
 # Now register the new UserAdmin...
 admin.site.register(MyUser, UserAdmin)
-admin.site.register(Student)
 admin.site.register(Engineer)
 admin.site.register(Professor)
+admin.site.register(Student)
 admin.site.unregister(Group)
