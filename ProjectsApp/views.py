@@ -41,7 +41,7 @@ def getProject(request):
             for group_name in group_names:
                 group = Group.objects.get(name__exact=group_name)
                 group.project.add(in_project)
-                #print group.project
+                print(group.project)
                 group.save()
         else:
             messages.error(request, 'Please select at lease one group!')

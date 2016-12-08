@@ -3,8 +3,6 @@
 Created by Harris Christiansen on 10/02/16.
 """
 from django.db import models
-
-from django.db import models
 from AuthenticationApp.models import MyUser
 import json
 
