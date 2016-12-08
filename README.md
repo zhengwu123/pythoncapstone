@@ -23,7 +23,7 @@ We're aware many people want to work on a project but have no idea where to star
 - [X] Company Module (Jacob)
 - [X] University Model (Jacob)
 - [X] Course Model (belongs to University)
-- [ ] Groups Module
+- [X] Groups Module
 	- [X] Create Groups
 	- [X] Add Users to Groups
 	- [X] List Groups your in
