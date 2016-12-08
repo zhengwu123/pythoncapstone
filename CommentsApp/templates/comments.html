@@ -1,21 +1,24 @@
 {% extends "body.html" %}
 {% block content %}
-<div class="table-responsive">
-    <table class="table">
-         <thead>
-            <tr class="success">
-                <th style="width: 20%">Time</th>
-                 <th style="width: 80%">Comment</th>
-            </tr>
-         </thead>
-         <tbody>
-            {% for item in comments %}
-            <tr class="success">
-                <td>{{ item.time }}</td>
-                <td>{{ item.comment }}</td>
-            </tr>
-            {% endfor %}
-        </tbody>
-    </table>
+<!-- Content -->
+<div class="container" role="main">
+	<div class="table-responsive">
+		<table class="table table-striped sortable">
+			<thead>
+				<tr class="success">
+					<th style="width: 20%">Time</th>
+					<th style="width: 80%">Comment</th>
+				</tr>
+			</thead>
+			<tbody>
+				{% for item in comments %}
+				<tr class="success">
+					<td>{{ item.time }}</td>
+					<td>{{ item.comment }}</td>
+				</tr>
+				{% endfor %}
+			</tbody>
+		</table>
+	</div>
 </div>
 {% endblock %}

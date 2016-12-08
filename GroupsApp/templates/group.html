@@ -6,22 +6,22 @@
 <div class="container theme-showcase" role="main">
   <div class="jumbotron">
     <h1>{{ group.name }}</h1>
-    <p>{{ group.description }}</p>
+    <p>{{ group.description |safe }}</p>
     {% if userIsMember or user.is_staff %}
-    <a href="/group/edit?name={{ group.name }}" class="btn btn-default">Edit this Group</a>
+    <a href="/group/edit?name={{ group.name }}" class="btn btn-default btn-sm"><span class="glyphicon glyphicon-pencil"></span>Edit</a>
     {% if userIsMember %}
-    <a href="/group/unjoin?name={{ group.name }}" class="btn btn-default">Unjoin this Group</a>
+    <a href="/group/unjoin?name={{ group.name }}" class="btn btn-default btn-sm"><span class="glyphicon glyphicon-remove"></span>leave Group</a>
     <br>
     <form style="display:inline;" action="/group/addmember?name={{ group.name }}" method="post">
       {% csrf_token %}
-      <input id="email" type="text" name="email" placeholder="example@example.com">
-      <input type="submit" value="Add Member" class="btn btn-default">
+      <input id="email" type="text" name="email" placeholder="test123@whatever.com">
+      <input type="submit" value="Add Member" class="btn btn-default btn-sm">
     </form>
     {% endif %}
 
-    <a href="/group/delete?name={{ group.name }}" class="btn btn-danger">Delete this Group</a>
+    <a href="/group/delete?name={{ group.name }}" class="btn btn-danger btn-sm"><span class="glyphicon glyphicon-remove"></span>Delete</a>
     {% elif is_student == True %}
-    <a href="/group/join?name={{ group.name }}" class="btn btn-default">Join this Group</a>
+    <a href="/group/join?name={{ group.name }}" class="btn btn-default btn-sm"><span class="glyphicon glyphicon-remove"></span>JoinGroup</a>
     {% endif %}
   </div>
 </div>
@@ -59,7 +59,7 @@
         {% for project in projects %}
         <tr>
           <td>{{ project.name }}</td>
-          <td>{{ project.description }}</td>
+          <td>{{ project.description | safe }}</td>
         </tr>
         {% endfor %}
       </tbody>
@@ -69,15 +69,7 @@
 </div>
 {% if userIsMember %}
 <div class="container" role="main">
-    <div class="panel panel-default">
-        <form method="post" enctype="multipart/form-data" class="panel-body validate">
-        {% csrf_token %}
-             <input type="text" name="comment" id="comment" placeholder="Comment" class="form-control" data-bvalidator="required" data-bvalidator-msg="Comment Required">
-             <br>
-             <input type="submit" value="Submit" class="btn btn-primary">
-             <input type="hidden" name="group" value="{{group.name}}" />
-        </form>
-    </div>
+
 </div>
 {% endif %}
 
@@ -101,7 +93,7 @@
         <tr>
           {% if project not in projects %}
           <td>{{ project.name }}</td>
-          <td>{{ project.description }}</td>
+          <td>{{ project.description |safe }}</td>
           <td>{{ project.programmingLanguage }}</td>
           <td>{{ project.speciaty }}</td>
           {% endif %}
@@ -114,6 +106,7 @@
 </div>
 
 <div class="container" role="main">
+
   <div class="table-responsive">
     <table class="table table-striped sortable">
       <thead>
@@ -137,6 +130,15 @@
         {% endfor %}
       </tbody>
     </table>
+          <div class="panel panel-default">
+        <form method="post" enctype="multipart/form-data" class="panel-body validate">
+        {% csrf_token %}
+             <input type="text" name="comment" id="comment" placeholder="Comment" class="form-control" data-bvalidator="required" data-bvalidator-msg="Comment Required">
+             <br>
+             <input type="submit" value="Submit" class="btn btn-primary">
+             <input type="hidden" name="group" value="{{group.name}}" />
+        </form>
+    </div>
   </div>
 </div>
 

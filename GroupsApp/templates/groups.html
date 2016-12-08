@@ -16,7 +16,7 @@
 					{% for item in groups %}
 					<tr class="success">
 						<td><a href="/group?name={{ item.name }}">{{ item.name }}</a></td>
-						<td>{{ item.description }}</td>
+						<td>{{ item.description|safe}}</td>
 					</tr>
 					{% endfor %}
 				</tbody>
